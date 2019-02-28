@@ -1,0 +1,148 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  Background-image:URL("../img/bg.jpg");
+  font: 13px/1.6 "chiller", helvetica, verdana, arial, sans-serif;
+  color:white;
+  margin: 0px;
+  overflow-y: scroll;
+  line-height: 21px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+  font-size:30px;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+/* Start styling for header area*/
+header {
+    padding-top:10px;
+}
+header .MyGames{
+  max-width:980px;
+  display: flex;
+  position: relative;
+}
+header .line {
+  border-bottom: solid 4px #7d97ad;
+  width:100%;
+}
+header .leftCol {
+  width:40%;
+  float:left;
+}
+header .rightCol {
+  width:90%;
+  text-align: right;
+  float: right;
+}
+header .rightCol .identy{
+  padding-bottom:5px;
+  font-size:40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+header .rightCol .goal{
+  font-size:30px;
+  font-weight: normal;
+  line-height: 21px;
+}
+header .dp {
+  background: url("../img/dp.jpg") no-repeat center;
+  -webkit-background-size: playstations;
+  -moz-background-size: playstations;
+  -o-background-size: playstations;
+  background-size: playstations;
+  border-radius: 20%;
+  display: inline-block;
+  width:80px;
+  height:80px;
+}
+/* End styling for header area*/
+h2.heading {
+  text-transform: uppercase;
+  margin: 1.75rem 0;
+  border-bottom: solid 1px #aaa;
+  line-height: 0px;
+  font-weight: normal;
+  color:#627788;
+}
+h2.heading span{
+  background: #eee;
+  padding-right:10px;
+}
+.MyGames{
+  max-width:980px;
+  margin: 0 auto;
+  padding:10px 20px;
+}
+/* Start stylying for portfolio items*/
+#items {
+  display: flex; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+#items .video-game {
+  background: black;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: left;
+  box-shadow: 0 2px 0 #D9E1E7;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+#items .video-game img{
+  border-radius: 3px 3px 0 0;
+}
+#items .video-game .info_block{
+  padding: 1.25rem;
+}
+#items .video-game h3 {
+  font-size:30px;
+  color:white;
+}
+#items .video-game:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
+/* End stylying for portfolio items*/
+footer {
+  max-width:980px;
+  margin:0 auto;
+  padding:10px 20px;
+  font-size:40px;
+}
+/*Media Queries*/
+/*For devices with width between 600px and 850px*/
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #items .video-game{
+    width:49%;
+  }
+  #items .video-game:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+  #items .video-game:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+/*For devices with width up to 600px*/    
+@media screen and (max-width: 600px)  {
+  #items .video-game{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
+  }
+}
